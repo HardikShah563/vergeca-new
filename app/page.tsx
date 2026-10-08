@@ -11,7 +11,7 @@ import { Pricing } from "@/components/sections/pricing";
 import { Introduction } from "@/components/sections/introduction";
 import { Demo } from "@/components/sections/demo";
 import { Analysis } from "@/components/sections/analysis";
-import { Faq } from "@/components/sections/faq";
+// import { Faq } from "@/components/sections/faq";
 import { ContactUs } from "@/components/sections/contact-us";
 import { AOS_Component } from "@/components/aos/aos";
 

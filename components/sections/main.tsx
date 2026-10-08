@@ -219,9 +219,9 @@ export function Main() {
                         <Carousel2 />
                     </CarouselItem>
 
-                    <CarouselItem key={3} className="flex items-center">
+                    {/* <CarouselItem key={3} className="flex items-center">
                         <Carousel3 />
-                    </CarouselItem>
+                    </CarouselItem> */}
 
                     <CarouselItem key={4} className="flex items-center">
                         <Carousel4 />

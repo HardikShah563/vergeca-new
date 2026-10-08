@@ -1,11 +1,11 @@
 // importing icons
 import {
     AlarmClockPlus,
+    HeartHandshake,
     Highlighter,
     History,
     Infinity,
-    LibraryBig,
-    MonitorSmartphone
+    LibraryBig
 } from "lucide-react";
 
 export const links = [
@@ -78,9 +78,9 @@ export const features = [
         "paragraph": "All Institute Materials are updated on a real-time basis. Don't have to wait for Printed Reference Materials."
     },
     {
-        "icon": MonitorSmartphone,
-        "heading": "Web & Mobile App",
-        "paragraph": "Student can login either from Web App or Mobile App using same credentials, any one at a time."
+        "icon": HeartHandshake,
+        "heading": "Free for Daughters of India",
+        "paragraph": "Female students get free access to the complete app as part of our Daughters of India initiative."
     },
     {
         "icon": LibraryBig,
