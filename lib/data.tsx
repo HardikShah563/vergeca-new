@@ -364,91 +364,75 @@ import demo14 from "@/public/images/demo14.png";
 import demo15 from "@/public/images/demo15.png";
 import demo16 from "@/public/images/demo16.png";
 import demo17 from "@/public/images/demo17.png";
-import demo18 from "@/public/images/demo18.png";
-import demo19 from "@/public/images/demo19.png";
-import demo20 from "@/public/images/demo20.png";
-import demo21 from "@/public/images/demo21.png";
 
 export const demoImages = [
     {
         "image": demo1,
-        "title": "Login Page",
+        "title": "",
     },
     {
         "image": demo2,
-        "title": "Register New Account",
+        "title": "",
     },
     {
         "image": demo3,
-        "title": "Menu Options",
+        "title": "",
     },
     {
         "image": demo4,
-        "title": "Select Level",
+        "title": "",
+    },
+    {
+        "image": demo5,
+        "title": "",
     },
     {
         "image": demo6,
-        "title": "Dashboard Page",
+        "title": "",
     },
     {
         "image": demo7,
-        "title": "Select Subject",
+        "title": "",
     },
     {
         "image": demo8,
-        "title": "Select your Own Marked Doubt/Done/LDR/Test Qs",
+        "title": "",
     },
     {
         "image": demo9,
-        "title": "Select Chapters",
+        "title": "",
     },
     {
         "image": demo10,
-        "title": "Select Chapters",
+        "title": "",
     },
     {
         "image": demo11,
-        "title": "Select Chapters",
+        "title": "",
     },
     {
         "image": demo12,
-        "title": "Select Multiple ICAI Materials",
+        "title": "",
     },
     {
         "image": demo13,
-        "title": "View Solutions",
+        "title": "",
     },
     {
         "image": demo14,
-        "title": "Toggle to Bookmark your Doubt/Done/LDR/Test Qs",
+        "title": "",
     },
     {
         "image": demo15,
-        "title": "Exact Reference of Institute Materials",
+        "title": "",
     },
     {
         "image": demo16,
-        "title": "Exact Reference of Institute Materials",
+        "title": "",
     },
     {
         "image": demo17,
-        "title": "Input Notes & Upload your Solution Images",
-    },
-    {
-        "image": demo18,
-        "title": "Profile/Subscription",
-    },
-    {
-        "image": demo19,
-        "title": "Renew Subscription",
-    },
-    {
-        "image": demo20,
-        "title": "Proceed for Subscription",
-    },
-    {
-        "image": demo21,
-        "title": "Razorpay Payment Gateway",
+        "title": "",
     },
 ];
 

@@ -13,7 +13,7 @@ export default function Demo() {
         <>
             <BackButton />
 
-            <div className="section md:mt-10 overflow-hidden">
+            {/* <div className="section md:mt-10 overflow-hidden">
                 <h2 className="heading mb-10 text-center">
                     Demo of the App
                 </h2>
@@ -29,9 +29,9 @@ export default function Demo() {
                     >
                     </iframe>
                 </div>
+            </div> */}
 
-            </div>
-            <div className="section pt-0 mb-20">
+            <div className="section pt-0 md:mt-20 mb-20">
                 <h2 className="heading mb-10 text-center capitalize">
                     Web Application Previews
                 </h2>
@@ -49,7 +49,7 @@ export default function Demo() {
                     Mobile Application Previews
                 </h2>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-10 space-y-14 md:space-y-10">
+                <div className="grid grid-cols-2 gap-5 md:gap-10 space-y-14 md:space-y-10">
                     {demoImages.map((demoImg, index) => (
                         <div key={index}>
                             <Image
