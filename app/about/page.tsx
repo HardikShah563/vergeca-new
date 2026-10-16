@@ -37,7 +37,9 @@ export default function page() {
                             &nbsp;<span className="font-bold text-foreground">CFA (USA)</span>&nbsp;
                             program in Feb 2023. Also, he has completed both levels of
                             &nbsp;<span className="font-bold text-foreground">CIPM (USA)</span>&nbsp;
-                            program in Feb 2024.
+                            program in Feb 2024. Also, he has cleared all four exams of
+                            &nbsp;<span className="font-bold text-foreground">CPA (USA)</span>&nbsp;
+                            in 2025.
                         </p>
                     </div>
 
@@ -63,13 +65,16 @@ export default function page() {
                         <p className="mt-2 text-muted-foreground font-medium">
                             CIPM (USA) Both Levels Cleared
                         </p>
+                        <p className="mt-2 text-muted-foreground font-medium">
+                            CPA (USA) License Awaited
+                        </p>
                     </div>
                 </div>
 
                 <div className="text-lg text-justify text-muted-foreground mt-10">
                     Founded and led Verge CA App, a specialized application tailored to the needs of aspiring Chartered Accountants, focusing on the provision of in-depth subject knowledge & technical guidance of highest educational quality, since November, 2020. Developed and curated online content and practice materials to aid CA Aspirants in their journey.
                     <br /><br />
-                    Verge CA App is Revision App for CA Final & CA Inter Students and is available on both Web App. CA Inter (Subjects: Advanced Accounting, Costing, Audit, Financial Management & Strategic Management) & CA Final (Subjects: Financial Reporting, Advanced Financial Management & Auditing).
+                    Verge CA App is Revision App for CA Final & CA Inter Students and is available on Web App. CA Inter (Subjects: Advanced Accounting, Costing, Audit, Financial Management & Strategic Management) & CA Final (Subjects: Financial Reporting, Advanced Financial Management & Auditing).
                     <br /><br />
                     Verge CA is Live Comprehensive & Time Management Revision App covering all Institute Materials at one place. Compilation Covers: (New Syllabus & Old Syllabus). App contains Questions from Institute Materials (Study Material, Practice Manual, Previous Exam Papers, RTP&apos;s & MTP&apos;s) at one place, which would help the students get a competitive edge in CA Exams.
                     <br /><br />

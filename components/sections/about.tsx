@@ -34,9 +34,11 @@ export function About() {
                             who achieved success in the CA Final exams on his first attempt in November 2023.
                             Additionally, he has completed all 3 levels of the
                             &nbsp;<span className="font-bold text-foreground">CFA (USA)</span>&nbsp;
-                            program in Feb 2023. Also, he has  completed both levels of
+                            program in Feb 2023. Also, he has completed both levels of
                             &nbsp;<span className="font-bold text-foreground">CIPM (USA)</span>&nbsp;
-                            program in Feb 2024.
+                            program in Feb 2024. Also, he has cleared all four exams of
+                            &nbsp;<span className="font-bold text-foreground">CPA (USA)</span>&nbsp;
+                            in 2025.
                         </p>
 
                         <div className="mt-10">
@@ -68,6 +70,9 @@ export function About() {
                         </p>
                         <p className="mt-2 text-muted-foreground font-medium">
                             CIPM (USA) Both Levels Cleared
+                        </p>
+                        <p className="mt-2 text-muted-foreground font-medium">
+                            CPA (USA) License Awaited
                         </p>
                     </div>
                 </div>
