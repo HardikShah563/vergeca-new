@@ -44,7 +44,7 @@ export function Demo() {
 
                     <p className="paragraph">
                         The app is available in the form of Web App. <br />
-                        View App Introduction and Screenshots of the Application.
+                        View Web App Introduction and Screenshots of the Web App.
                     </p>
 
                     <ArrowButton

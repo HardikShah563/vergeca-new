@@ -5,7 +5,7 @@ import Link from "next/link";
 // importing shadcn components
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { pricing } from "@/lib/data";
+import { pricingCAFinal, pricingCAInter } from "@/lib/data";
 
 // importing images
 import pricingImg from "@/public/images/pricing.png";
@@ -75,40 +75,67 @@ export function Pricing() {
         <>
             <section id={"pricing"} className={"px-[5vw] md:px-[10vw] py-20 md:py-28 lg:py-32"}>
                 <div className="container px-4 md:px-6">
-                    <div className="flex flex-col items-center justify-center space-y-4 text-center">
-                        <div className="space-y-2">
+                    <div className="flex flex-col items-center justify-center space-y-6 text-center">
+                        <div className="space-y-3">
                             <h1 className="heading">
                                 Subscription Plans
                             </h1>
-                            {/* <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                Choose the plan that fits your needs.
-                            </p> */}
-                            <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                Download the App and Register for free.
-                                <br />
-                                Get 2 days of free access to any 1 subject.
-                                <br />
-                                Extend further for 7 days by providing Institute Registration Image on Whatsapp.
-                                <br />
-                                <br />
-                                <h1 className="text-2xl font-bold mb-5 text-foreground">
-                                    Further choose the plan that fits your needs
-                                </h1>
-                            </p>
+                            <div className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                                <p>
+                                    Download the App and Register for free.
+                                    <br />
+                                    Get 2 days of free access to any 1 subject.
+                                    <br />
+                                    Extend further for 7 days by providing Institute Registration Image on Whatsapp.
+                                </p>
+                            </div>
+                            <h2 className="text-2xl font-bold pt-3 text-foreground">
+                                Further choose the plan that fits your needs
+                            </h2>
                         </div>
 
-                        <div className="w-full md:w-[90vw] lg:w-[70vw] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                            {pricing.map((pricingCard) => (
-                                <PricingCard
-                                    key={pricingCard.name}
-                                    name={pricingCard.name}
-                                    cost={pricingCard.cost}
-                                    costDivision={pricingCard.costDivision}
-                                    duration={pricingCard.duration}
-                                    userCount={pricingCard.userCount}
-                                    features={pricingCard.features}
-                                />
-                            ))}
+                        {/* CA Final Section */}
+                        <div className="w-full flex flex-col items-center space-y-4 pt-4">
+                            <div className="bg-muted border border-border px-6 py-3 rounded-xl shadow-sm">
+                                <h3 className="text-xl md:text-2xl font-bold text-foreground text-center">
+                                    CA Final - FR, AFM &amp; Audit &amp; CA Inter - Costing &amp; Audit
+                                </h3>
+                            </div>
+                            <div className="w-full md:w-[90vw] lg:w-[70vw] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                                {pricingCAFinal.map((pricingCard) => (
+                                    <PricingCard
+                                        key={`final-${pricingCard.name}`}
+                                        name={pricingCard.name}
+                                        cost={pricingCard.cost}
+                                        costDivision={pricingCard.costDivision}
+                                        duration={pricingCard.duration}
+                                        userCount={pricingCard.userCount}
+                                        features={pricingCard.features}
+                                    />
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* CA Inter Section */}
+                        <div className="w-full flex flex-col items-center space-y-4 pt-8">
+                            <div className="bg-muted border border-border px-6 py-3 rounded-xl shadow-sm">
+                                <h3 className="text-xl md:text-2xl font-bold text-foreground text-center">
+                                    CA Inter - Advanced Accounting, AS Advanced Accounting, FM &amp; SM
+                                </h3>
+                            </div>
+                            <div className="w-full md:w-[90vw] lg:w-[70vw] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                                {pricingCAInter.map((pricingCard) => (
+                                    <PricingCard
+                                        key={`inter-${pricingCard.name}`}
+                                        name={pricingCard.name}
+                                        cost={pricingCard.cost}
+                                        costDivision={pricingCard.costDivision}
+                                        duration={pricingCard.duration}
+                                        userCount={pricingCard.userCount}
+                                        features={pricingCard.features}
+                                    />
+                                ))}
+                            </div>
                         </div>
 
                         <div className="space-y-5">

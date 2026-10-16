@@ -289,7 +289,42 @@ export const testimonials = [
     },
 ];
 
-export const pricing = [
+export const pricingCAFinal = [
+    {
+        "name": "Monthly Plan",
+        "cost": 149,
+        "costDivision": "per subject",
+        "duration": 30,
+        "userCount": 1,
+        "features": ["30 Days", "All Features"],
+    },
+    {
+        "name": "Quaterly Plan",
+        "cost": 299,
+        "costDivision": "per subject",
+        "duration": 90,
+        "userCount": 1,
+        "features": ["90 Days", "All Features"],
+    },
+    {
+        "name": "Bi-annual Plan",
+        "cost": 399,
+        "costDivision": "per subject",
+        "duration": 180,
+        "userCount": 1,
+        "features": ["180 Days", "All Features"],
+    },
+    {
+        "name": "Annual Plan",
+        "cost": 499,
+        "costDivision": "per subject",
+        "duration": 360,
+        "userCount": 1,
+        "features": ["360 Days", "All Features"],
+    },
+];
+
+export const pricingCAInter = [
     {
         "name": "Monthly Plan",
         "cost": 99,
@@ -323,6 +358,8 @@ export const pricing = [
         "features": ["360 Days", "All Features"],
     },
 ];
+
+export const pricing = pricingCAInter;
 
 export const faq = [
     {
