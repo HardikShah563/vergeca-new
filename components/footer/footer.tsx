@@ -121,7 +121,7 @@ export function Footer() {
                     <TooltipProvider>
                         <div className="flex gap-5 md:gap-10">
                             <Tooltip delayDuration={0}>
-                                <TooltipTrigger>
+                                <TooltipTrigger asChild>
                                     <a target="_blank" href="https://t.me/vergeca">
                                         <TelegramIcon className="w-6 h-6 fill-background" />
                                     </a>
@@ -132,7 +132,7 @@ export function Footer() {
                             </Tooltip>
 
                             <Tooltip delayDuration={0}>
-                                <TooltipTrigger>
+                                <TooltipTrigger asChild>
                                     <a target="_blank" href="https://t.me/vergecaca">
                                         <TelegramIcon className="w-6 h-6 fill-background" />
                                     </a>
@@ -143,7 +143,7 @@ export function Footer() {
                             </Tooltip>
 
                             <Tooltip delayDuration={0}>
-                                <TooltipTrigger>
+                                <TooltipTrigger asChild>
                                     <a target="_blank" href="https://wa.me/message/K7QI5MNW454VH1">
                                         <WhatsappIcon className="w-6 h-6 fill-background" />
                                     </a>
@@ -154,7 +154,7 @@ export function Footer() {
                             </Tooltip>
 
                             <Tooltip delayDuration={0}>
-                                <TooltipTrigger>
+                                <TooltipTrigger asChild>
                                     <a target="_blank" href="https://chat.whatsapp.com/Fuxb3SG4zMjJOXIwRthg81">
                                         <WhatsappIcon className="w-6 h-6 fill-background" />
                                     </a>
@@ -165,7 +165,7 @@ export function Footer() {
                             </Tooltip>
 
                             <Tooltip delayDuration={0}>
-                                <TooltipTrigger>
+                                <TooltipTrigger asChild>
                                     <a target="_blank" href="https://www.linkedin.com/in/vergeca">
                                         <LinkedinIcon className="w-6 h-6 fill-background" />
                                     </a>
@@ -176,7 +176,7 @@ export function Footer() {
                             </Tooltip>
 
                             <Tooltip delayDuration={0}>
-                                <TooltipTrigger>
+                                <TooltipTrigger asChild>
                                     <a target="_blank" href="https://www.linkedin.com/in/cacfaneel0409">
                                         <LinkedinIcon className="w-6 h-6 fill-background" />
                                     </a>

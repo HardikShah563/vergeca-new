@@ -24,7 +24,7 @@ export function NavSheet() {
     return (
         <>
             <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
-                <SheetTrigger>
+                <SheetTrigger asChild>
                     <Button variant={"ghost"} className="h-9 py-2 mr-2 px-0 md:hidden">
                         <Menu className="w-6" />
                         <span className="sr-only">Toggle Menu</span>

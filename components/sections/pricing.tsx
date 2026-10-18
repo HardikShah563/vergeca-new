@@ -55,7 +55,7 @@ export function PricingCard(props: PriceCardInterface) {
 
                 <Button variant={"default"} className="w-full bg-accent group-hover:bg-foreground gap-2" asChild>
                     <Link
-                        href={"https://razorpay.com/payment-button/pl_NHp37ij40PUezS/view/"}
+                        href={"https://razorpay.me/@vergeca"}
                     >
                         Get Started
                         <Image
@@ -157,7 +157,7 @@ export function Pricing() {
                                     <li>
                                         <Button variant={"default"} className="w-fit bg-accent group-hover:bg-foreground gap-2" asChild>
                                             <Link
-                                                href={"https://razorpay.com/payment-button/pl_NHp37ij40PUezS/view/"}
+                                                href={"https://razorpay.me/@vergeca"}
                                             >
                                                 Pay with Razorpay
                                                 <Image

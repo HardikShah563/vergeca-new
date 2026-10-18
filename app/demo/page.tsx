@@ -39,15 +39,8 @@ export default function Demo() {
                 <Image
                     src={web1}
                     alt={"demo image - webapp"}
-                    className="h-full mt-10"
+                    className="h-full my-10 mb-20"
                 />
-                <h1 className="text-lg md:text-2xl font-bold text-center mt-2 leading-normal mb-10 md:mb-20">
-                    Demo Interface of Web App
-                </h1>
-
-                <h2 className="heading mb-10 text-center capitalize">
-                    Mobile Application Previews
-                </h2>
 
                 <div className="grid grid-cols-2 gap-5 md:gap-10 space-y-14 md:space-y-10">
                     {demoImages.map((demoImg, index) => (
