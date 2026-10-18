@@ -1,3 +1,5 @@
+"use client";
+
 // importing from next
 import Image from "next/image";
 
@@ -7,6 +9,15 @@ import web1 from "@/public/images/web1.png";
 // importing data
 import { demoImages } from "@/lib/data";
 import { BackButton } from "@/components/sections/back-button";
+
+// importing shadcn components
+import {
+    Dialog,
+    DialogTrigger,
+    DialogContent,
+    DialogTitle,
+    DialogDescription,
+} from "@/components/ui/dialog";
 
 export default function Demo() {
     return (
@@ -36,26 +47,79 @@ export default function Demo() {
                     Web Application Previews
                 </h2>
 
-                <Image
-                    src={web1}
-                    alt={"demo image - webapp"}
-                    className="h-full my-10 mb-20"
-                />
-
-                <div className="grid grid-cols-2 gap-5 md:gap-10 space-y-14 md:space-y-10">
-                    {demoImages.map((demoImg, index) => (
-                        <div key={index}>
+                <Dialog>
+                    <DialogTrigger asChild>
+                        <button
+                            type="button"
+                            className="w-full text-left cursor-pointer overflow-hidden rounded-lg border border-border/50 shadow-sm transition-all duration-200 hover:shadow-md hover:scale-[1.005] my-10 mb-20 p-2 bg-card focus:outline-none focus:ring-2 focus:ring-ring"
+                        >
                             <Image
-                                src={demoImg.image}
-                                alt={"demo image " + (index + 1)}
-                                className="h-full"
+                                src={web1}
+                                alt={"demo image - webapp"}
+                                className="w-full h-auto object-contain rounded pointer-events-none select-none"
                             />
-                            {demoImg.title && (
-                                <h1 className="text-xs md:text-lg font-bold text-center mt-2 leading-normal">
-                                    {demoImg.title}
-                                </h1>
-                            )}
+                        </button>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-[95vw] md:max-w-5xl max-h-[90vh] p-2 sm:p-4 flex flex-col items-center justify-center bg-background/95 backdrop-blur-sm">
+                        <DialogTitle className="sr-only">
+                            Web Application Preview
+                        </DialogTitle>
+                        <DialogDescription className="sr-only">
+                            Enlarged view of the web application preview
+                        </DialogDescription>
+                        <div className="relative w-full max-h-[82vh] flex flex-col items-center justify-center overflow-auto">
+                            <Image
+                                src={web1}
+                                alt="Web Application Preview"
+                                className="max-h-[80vh] w-auto h-auto object-contain rounded-md"
+                                priority
+                            />
                         </div>
+                    </DialogContent>
+                </Dialog>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
+                    {demoImages.map((demoImg, index) => (
+                        <Dialog key={index}>
+                            <DialogTrigger asChild>
+                                <button
+                                    type="button"
+                                    className="w-full text-left cursor-pointer overflow-hidden rounded-lg border border-border/50 shadow-sm transition-all duration-200 hover:shadow-md hover:scale-[1.01] bg-card p-2 flex flex-col justify-between focus:outline-none focus:ring-2 focus:ring-ring"
+                                >
+                                    <Image
+                                        src={demoImg.image}
+                                        alt={"demo image " + (index + 1)}
+                                        className="w-full h-auto object-contain rounded pointer-events-none select-none"
+                                    />
+                                    {demoImg.title && (
+                                        <h1 className="text-xs md:text-lg font-bold text-center mt-2 leading-normal">
+                                            {demoImg.title}
+                                        </h1>
+                                    )}
+                                </button>
+                            </DialogTrigger>
+                            <DialogContent className="max-w-[95vw] md:max-w-5xl max-h-[90vh] p-2 sm:p-4 flex flex-col items-center justify-center bg-background/95 backdrop-blur-sm">
+                                <DialogTitle className="sr-only">
+                                    {demoImg.title || ("Demo Image " + (index + 1))}
+                                </DialogTitle>
+                                <DialogDescription className="sr-only">
+                                    Enlarged view of demo preview image
+                                </DialogDescription>
+                                <div className="relative w-full max-h-[82vh] flex flex-col items-center justify-center overflow-auto">
+                                    <Image
+                                        src={demoImg.image}
+                                        alt={demoImg.title || ("Enlarged demo image " + (index + 1))}
+                                        className="max-h-[80vh] w-auto h-auto object-contain rounded-md"
+                                        priority
+                                    />
+                                    {demoImg.title && (
+                                        <p className="mt-3 text-center text-sm md:text-base font-medium text-foreground">
+                                            {demoImg.title}
+                                        </p>
+                                    )}
+                                </div>
+                            </DialogContent>
+                        </Dialog>
                     ))}
                 </div>
             </div>
