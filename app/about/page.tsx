@@ -61,7 +61,7 @@ export default function page() {
                             Chartered Accountant
                         </p>
                         <p className="mt-2 text-muted-foreground font-medium">
-                            CFA (USA) CharterHolder
+                            CFA (USA) Charterholder
                         </p>
                         <p className="mt-2 text-muted-foreground font-medium">
                             CIPM (USA) Both Levels Cleared
