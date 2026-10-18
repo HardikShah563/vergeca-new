@@ -79,7 +79,7 @@ export function About() {
                             Chartered Accountant
                         </p>
                         <p className="mt-2 text-muted-foreground font-medium">
-                            CFA (USA) All 3 Levels Cleared
+                            CFA (USA) CharterHolder
                         </p>
                         <p className="mt-2 text-muted-foreground font-medium">
                             CIPM (USA) Both Levels Cleared
